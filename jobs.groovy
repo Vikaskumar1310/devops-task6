@@ -23,7 +23,7 @@ job("task6-job2")
               upstream("task6-job1","SUCCESS")
         }
         steps {
-               shell("sh /myjaky_OS/root/task6/job2.sh")
+               shell("sudo sh /myjaky_OS/root/task6/job2.sh")
         }
 }
 
@@ -34,7 +34,7 @@ job("task6-job3")
               upstream("task6-job2","SUCCESS")
         }
         steps {
-               shell("sh /myjaky_OS/root/task6/job3.sh")
+               shell("sudo sh /myjaky_OS/root/task6/job3.sh")
         }
         publishers {
                    mailer('vkk1310@gmail.com',false,false)
