@@ -8,10 +8,11 @@ job("task6-job1")
 		scm("* * * * *")
 	}
 	steps{
-		shell(""
+		shell("""
+		sudo mkdir -p /myjaky_OS/root/task6
 		sudo cp -v * /myjaky_OS/root/task6
 		sudo rm -f * 
-                "")
+                """)
 	}
 }
 
