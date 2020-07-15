@@ -19,10 +19,10 @@ job("task6-job1")
 job("task6-job2")
 {
        description("this job launch the webserver")
-       trigger{
+       triggers {
               upstream("task6-job1","SUCCESS")
         }
-        steps{
+        steps {
                shell("sh /myjaky_OS/root/task6/job2.sh")
         }
 }
@@ -30,13 +30,13 @@ job("task6-job2")
 job("task6-job3")
 {
        description("this job test the webpage according to the lang and send the mail to developer if any code fails")
-       trigger{
+       triggers {
               upstream("task6-job2","SUCCESS")
         }
-        steps{
+        steps {
                shell("sh /myjaky_OS/root/task6/job3.sh")
         }
-        publishers{
+        publishers {
                    mailer('vkk1310@gmail.com',false,false)
         }
 }
