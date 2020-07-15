@@ -36,9 +36,7 @@ job("task6-job3")
         steps {
                shell("sudo sh /myjaky_OS/root/task6/job3.sh")
         }
-        publishers {
-                   mailer('vkk1310@gmail.com',false,false)
-        }
+        
 }
 buildPipelineView("devops-task6"){
         filterBuildQueue()
