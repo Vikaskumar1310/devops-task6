@@ -41,7 +41,7 @@ job("task6-job3")
         }
 }
 buildPipelineView("devops-task6"){
-        fileterBuildQueue()
+        filterBuildQueue()
         filterExecutors()
         title("task6-build-pipeline")
         displayedBuilds(3)
