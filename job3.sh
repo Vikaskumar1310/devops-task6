@@ -16,5 +16,7 @@ then
     exit 0
 else
     echo "oopss App is not working "
-    exit 1
+    sudo python3 /myjaky_OS/root/task6/mail.py
+    echo "mail sent successfully"
+    exit 0
 fi
