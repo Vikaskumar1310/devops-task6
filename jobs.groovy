@@ -2,7 +2,7 @@ job("task6-job1")
 {
 	description("this Job will clone repo from GitHub and copy code to my os")
 	scm {
-		github("Vikaskumar1310/devops-task3","master")
+		github("Vikaskumar1310/devops-task6","master")
 	}
 	triggers {
 		scm("* * * * *")
